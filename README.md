@@ -1,7 +1,8 @@
-LLM-Based Automation Agent 🚀
+LLM-Based Automation Agent 
+
 This project is an AI-powered automation agent that parses task descriptions and executes various operational and business-related tasks, including file processing, web scraping, SQL queries, API interactions, and more.
 
-📌 Features
+Features:
 Task Execution via LLM: Interprets tasks and performs relevant operations.
 Operational Tasks:
 Count occurrences of weekdays in log files
