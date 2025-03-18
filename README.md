@@ -16,27 +16,27 @@ Run SQL queries on SQLite/DuckDB
 Scrape website data
 Transcribe audio from an MP3 file
 Security Compliance:
-❌ No file deletions
-❌ No access beyond /data directory
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+ No file deletions
+ No access beyond /data directory
+ Installation & Setup
+1️)Clone the Repository
 
 Copy
 Edit
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-2️⃣ Install Dependencies
+2️)Install Dependencies
 Ensure you have Python 3.8+ installed, then run:
 
 Copy
 Edit
 pip install -r requirements.txt
-3️⃣ Run the Application
+3️) Run the Application
 
 Copy
 Edit
 python app.py
-4️⃣ Use the API
+4️) Use the API
 Run a Task
 
 Copy
@@ -48,33 +48,33 @@ Copy
 Edit
 curl -X GET "http://localhost:8000/read?path=/data/api_data.json"
 🐳 Run with Docker
-1️⃣ Build the Docker Image
+1️)Build the Docker Image
 
 Copy
 Edit
 docker build -t your-username/llm-agent .
-2️⃣ Run the Container
+2️)Run the Container
 
 Copy
 Edit
 docker run -e AIPROXY_TOKEN=$AIPROXY_TOKEN -p 8000:8000 your-username/llm-agent
-3️⃣ Access the API
+3️) Access the API
 
 Copy
 Edit
 curl -X POST "http://localhost:8000/run?task=convert+Markdown+to+HTML"
-📜 Security & Compliance
-🔒 Files outside /data/ are never accessed or modified.
-🔒 No file deletions are allowed.
-🔒 Uses AIPROXY_TOKEN securely via environment variables.
-🏆 Evaluation Criteria
-✅ GitHub repository with MIT License
-✅ Functional API handling all defined tasks
-✅ Docker container deploys API correctly
-✅ Passing POST /run?task=... and GET /read?path=... tests
+ Security & Compliance
+ Files outside /data/ are never accessed or modified.
+ No file deletions are allowed.
+ Uses AIPROXY_TOKEN securely via environment variables.
+ Evaluation Criteria
+ GitHub repository with MIT License
+ Functional API handling all defined tasks
+ Docker container deploys API correctly
+ Passing POST /run?task=... and GET /read?path=... tests
 
-📌 License
+ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-🤝 Contributing
+ Contributing
 Want to improve this project? Feel free to fork, create a PR, or open an issue! 🚀
